@@ -33,6 +33,7 @@ return booksService.getBooksById(bookid);
 @DeleteMapping("/book/{bookid}")
 private void deleteBook(@PathVariable("bookid") int bookid) 
 {
+  System.out.println("log");
 booksService.delete(bookid);
 }
 //creating post mapping that post the book detail in the database
